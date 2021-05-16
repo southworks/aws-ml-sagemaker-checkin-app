@@ -1,0 +1,16 @@
+{
+  "region": "us-east-1",
+  "accessKeyId": "<AWS_ACCESS_KEY_ID>",
+  "secretAccessKey": "<AWS_SECRET_ACCESS_KEY>",
+  "accountId": "<AWS_ACCOUNT_ID>",
+  "resourcesPrefix": "smk-article-3",
+  "stackName": "SamarkandArticleStack3",
+  "modelToDeploy": "blazingText",
+  "modelArtifacts": {
+    "blazingText": { "model": "modelArtifacts/blazingText/model.tar.gz" },
+    "chainer": {
+      "model": "modelArtifacts/chainer/model.tar.gz",
+      "sourcedir": "modelArtifacts/chainer/sourcedir.tar.gz"
+    }
+  }
+}

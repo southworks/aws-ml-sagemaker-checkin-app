@@ -1,0 +1,31 @@
+{
+  "aws": {
+    "region": "<region>",
+    "bucketName": "<resourcesPrefix>-bucket",
+    "dynamoDB": {
+      "feelingTable": {
+        "name": "<resourcesPrefix>-feeling"
+      },
+      "userTable": {
+        "name": "<resourcesPrefix>-user"
+      }
+    },
+    "KDS": {
+      "sentimentResult": "<resourcesPrefix>-sentimentResults",
+      "unrecognizedResult": "<resourcesPrefix>-unrecognizedResults"
+    },
+    "SES": {
+      "sesNotificationsTemplateName": "<resourcesPrefix>-sesNotificationTemplate"
+    },
+    "SNS": {
+      "topicArn": "arn:aws:sns:<region>:<accountId>:<resourcesPrefix>-notificationsTopic",
+      "emailSubscription": "<email>"
+    },
+    "SageMaker": {
+      "endpointName": "<resourcesPrefix>-sagemakerendpoint",
+      "predictionProbabilityThreshold": 0.75,
+      "negativeLabel": "__label__0",
+      "positiveLabel": "__label__1"
+    }
+  }
+}
